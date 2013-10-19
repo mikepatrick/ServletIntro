@@ -13,4 +13,49 @@
 	<url-pattern>/SelectBeer.do</url-pattern>
 </servlet-mapping>
 
+<servlet>
+	<servlet-name>BeerParamTests</servlet-name>
+	<servlet-class>com.mike.beer.web.TestInitParams</servlet-class>
+	<init-param>
+		<param-name>adminEmail</param-name>
+		<param-value>mpatrick76@gmail.com</param-value>
+	</init-param>
+	<init-param>
+		<param-name>mainEmail</param-name>
+		<param-value>mpatrick@cds-global.com</param-value>
+	</init-param>
+</servlet>
+
+
+<servlet-mapping>
+	<servlet-name>BeerParamTests</servlet-name>
+	<url-pattern>/Tester.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ListenerTester</servlet-name>
+	<servlet-class>com.mike.beer.web.ListenerTester</servlet-class>
+<servlet>
+
+
+
+<servlet-mapping>
+	<servlet-name>ListenerTester</servlet-name>
+	<url-pattern>/ListenTest.do</url-pattern>
+</servlet-mapping>
+
+<context-param>
+	<param-name>contextEmail</param-name>
+	<param-value>mpatrick@context.net</param-value>
+</context-param>
+
+<context-param>
+	<param-name>breed</param-name>
+	<param-value>Pug</param-value>
+</context-param>
+
+<listener>
+	<listener-class>com.mike.beer.web.MyServletContextListener</listener-class>
+</listener>
+
 </web-app>
