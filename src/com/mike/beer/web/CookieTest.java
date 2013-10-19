@@ -6,6 +6,11 @@ import javax.servlet.http.*;
 
 public class CookieTest extends HttpServlet {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7176132887658205932L;
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
 		response.setContentType("text/html");
