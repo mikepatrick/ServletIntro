@@ -35,9 +35,7 @@
 <servlet>
 	<servlet-name>ListenerTester</servlet-name>
 	<servlet-class>com.mike.beer.web.ListenerTester</servlet-class>
-<servlet>
-
-
+</servlet>
 
 <servlet-mapping>
 	<servlet-name>ListenerTester</servlet-name>
