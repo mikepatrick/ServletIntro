@@ -2,8 +2,8 @@
 <html>
 <body>
 The page has been requested: 
-<%
-	out.println(Counter.getCount());
+<%=
+	Counter.getCount()
 %>
 times.
 </body>
