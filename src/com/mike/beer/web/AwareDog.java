@@ -15,4 +15,5 @@ public class AwareDog extends Dog implements HttpSessionBindingListener {
 	public void valueUnbound(HttpSessionBindingEvent event) {
 		// Dog knows he is being removed from a session
 	}
+	
 }
