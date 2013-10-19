@@ -3,6 +3,18 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
 	
+
+<servlet>
+	<servlet-name>ListenerTester</servlet-name>
+	<servlet-class>com.mike.beer.web.ListenerTester</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>ListenerTester</servlet-name>
+	<url-pattern>/ListenTest.do</url-pattern>
+</servlet-mapping>
+
+
 <servlet>
 	<servlet-name>Ch3 Beer</servlet-name>
 	<servlet-class>com.mike.beer.web.BeerSelect</servlet-class>
@@ -11,6 +23,26 @@
 <servlet-mapping>
 	<servlet-name>Ch3 Beer</servlet-name>
 	<url-pattern>/SelectBeer.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Set Cookie Demo</servlet-name>
+	<servlet-class>com.mike.beer.web.CookieTest</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Set Cookie Demo</servlet-name>
+	<url-pattern>/SetCookie.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Get Cookie Demo</servlet-name>
+	<servlet-class>com.mike.beer.web.CheckCookie</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Get Cookie Demo</servlet-name>
+	<url-pattern>/GetCookie.do</url-pattern>
 </servlet-mapping>
 
 <servlet>
@@ -26,20 +58,9 @@
 	</init-param>
 </servlet>
 
-
 <servlet-mapping>
 	<servlet-name>BeerParamTests</servlet-name>
 	<url-pattern>/Tester.do</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>ListenerTester</servlet-name>
-	<servlet-class>com.mike.beer.web.ListenerTester</servlet-class>
-</servlet>
-
-<servlet-mapping>
-	<servlet-name>ListenerTester</servlet-name>
-	<url-pattern>/ListenTest.do</url-pattern>
 </servlet-mapping>
 
 <context-param>
